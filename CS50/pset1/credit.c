@@ -3,9 +3,11 @@ int main(void)
 {
     // input
     long long int n;
+    do{
+        printf("Enter valid credit card number: \n");
+        scanf("%lld", &n);
+    }while(n<0);
 
-    printf("Enter the credit card number: \n");
-    scanf("%lld", &n);
     long long int old = n;
 
     // length of the card
